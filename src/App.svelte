@@ -1,10 +1,17 @@
 <script>
+	import PlayerDetails from "./PlayerDetails.svelte";
+	import PlayersList from "./PlayersList.svelte";
+
 	export let name;
+
+	let myValue = 'test';
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<PlayersList inputValue={myValue + 'extra'}></PlayersList>
+	<PlayerDetails inputValue={myValue}></PlayerDetails>
 </main>
 
 <style>
