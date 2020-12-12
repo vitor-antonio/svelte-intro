@@ -13,8 +13,8 @@
 
     function selectPlayer(player) {
         console.log(player);
-        //selectedPlayer = player;
-        //dispatch("playerSelected", player);
+        selectedPlayer = player;
+        dispatch("playerSelected", player);
     }
 
     $: filteredPlayers = localPlayers?.filter(
@@ -31,12 +31,20 @@
     .selected-player {
         color: red;
     }
+
+    .player-image {
+		max-width: 300px;
+	}
+
+    .stuff {
+        text-align: center;
+    }
 </style>
 
 <div>
-    <!-- My data is
+    My data is
     <input type="checkbox" bind:checked={isValid} />
-    {inputValue} -->
+    {inputValue}
 
     <h1>{pageTitle}</h1>
 
@@ -56,6 +64,10 @@
                 {localPlayer.first_name}
                 {localPlayer.last_name}
                 <span> : {localPlayer.team}</span>
+                <p>
+                    <img class="player-image" alt={localPlayer.first_name} src={localPlayer.image}/> 
+                </p>
+                
             </div>
         {/each}
     {/if}
