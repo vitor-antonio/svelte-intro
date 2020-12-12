@@ -14,3 +14,4 @@
     My data is <input type="checkbox" bind:checked={isValid} />
     {inputValue}
 </div>
+<!-- <img src="./myimage.png"/> -->
