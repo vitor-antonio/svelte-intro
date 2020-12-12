@@ -5,7 +5,7 @@
         "last_name": "Vardy",
         "team": "Leicester",
         "position": "Striker",
-        "image": "jamievardy.jpg"
+        "image": "assets/jamievardy.jpg"
     },
     {
         "identifier": 1,
@@ -13,7 +13,7 @@
         "last_name": "De Bruyne",
         "team": "Manchester City",
         "position": "Midfielder 2",
-        "image": "kevindebruyne.jpg"
+        "image": "assets/kevindebruyne.jpg"
     },
     {
         "identifier": 2,
@@ -21,7 +21,7 @@
         "last_name": "De Gea",
         "team": "Manchester United",
         "position": "Goalkeeper",
-        "image": "daviddegea.jpg"
+        "image": "assets/daviddegea.jpg"
     },
     {
         "identifier": 3,
@@ -29,7 +29,7 @@
         "last_name": "Rashford",
         "team": "Manchester United",
         "position": "Striker",
-        "image": "marcusrashford.jpg"
+        "image": "assets/marcusrashford.jpg"
     },
     {
         "identifier": 4,
@@ -37,7 +37,7 @@
         "last_name": "Kane",
         "team": "Tottenham",
         "position": "Striker",
-        "image": "harrykane.jpg"
+        "image": "assets/harrykane.jpg"
     },
     {
         "identifier": 5,
@@ -45,7 +45,7 @@
         "last_name": "Lloris",
         "team": "Tottenham",
         "position": "Goalkeeper",
-        "image": "hugolloris.jpg"
+        "image": "assets/hugolloris.jpg"
     },
     {
         "identifier": 6,
@@ -53,6 +53,6 @@
         "last_name": "Son",
         "team": "Tottenham",
         "position": "Midfielder 1",
-        "image": "heung-minson.jpg"
+        "image": "assets/heung-minson.jpg"
     }
 ]

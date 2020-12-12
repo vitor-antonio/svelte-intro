@@ -73,11 +73,15 @@
 	<p>{error}</p>
 	{/if} -->
 
-	<!-- {#await playersPromise}
+	{#await playersPromise}
 		<p>Loading...</p>
 	{:then players}
 		<pre>{JSON.stringify(players, null, 2)}</pre>
+		{#each players as player}
+			<p>{player.first_name}</p>
+			<img src={player.image} alt="{player.first_name}"/>
+		{/each}
 	{:catch error}
 		{error}
-	{/await} -->
+	{/await}
 </main>
