@@ -26,8 +26,6 @@
         ? playersList.filter((player) => player.selected)
         : playersList;
 
-    $: reactivePlayerList = playersList;
-
     function selectPlayer(p) {
         playersList = playersList.map(player => {
             if(p === player) {return {...player, selected: !player.selected }} 
