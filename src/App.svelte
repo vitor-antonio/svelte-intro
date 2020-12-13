@@ -2,6 +2,7 @@
 	import PlayerDetails from "./PlayerDetails.svelte";
 	import PlayersList from "./PlayersList.svelte";
 	import playersData from "./playersData.json";
+	import Reactivity from "./Reactivity.svelte";
 	export let name;
 	let players;
 	let error;
@@ -21,9 +22,7 @@
 	// 	})
 	// 	.catch((e) => (error = e));
 
-	fetchPlayersData().then((x) =>
-		(players = x)
-	);
+	fetchPlayersData().then((x) => (players = x));
 
 	playersPromise = fetchPlayersData();
 
@@ -47,8 +46,7 @@
 		},
 	];
 
-
-	function newPlayerSelected(player){
+	function newPlayerSelected(player) {
 		//console.log('from dispatcher', player);
 		alert(player.detail.first_name);
 	}
@@ -87,8 +85,8 @@
 		<a href="https://svelte.dev/tutorial">Svelte tutorial</a>
 		to learn how to build Svelte apps.
 	</p>
-
-	<PlayersList on:playerSelected={newPlayerSelected} localPlayers={players}/>
+	<Reactivity />
+	<!-- <PlayersList on:playerSelected={newPlayerSelected} localPlayers={players}/> -->
 	<!--<PlayerDetails inputValue={myValue}></PlayerDetails> -->
 
 	<!-- <pre>{JSON.stringify(players, null, 2)}</pre> -->

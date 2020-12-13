@@ -27,7 +27,10 @@
 </script>
 
 <style>
-    /* your styles go here */
+    .player-item {
+        cursor: pointer;
+    }
+    
     .selected-player {
         color: red;
     }
@@ -58,9 +61,9 @@
 
     {#if localPlayers}
         {#each localPlayers as localPlayer}
-            <div
+            <div class="player-item"
                 class:selected-player={selectedPlayer === localPlayer}
-                on:click={selectPlayer(localPlayer)}>
+                on:click={() =>selectPlayer(localPlayer)}>
                 {localPlayer.first_name}
                 {localPlayer.last_name}
                 <span> : {localPlayer.team}</span>
