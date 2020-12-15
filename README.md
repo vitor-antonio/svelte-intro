@@ -1,3 +1,6 @@
+Simple example using a couple of Svelte features. Bindings/Conditions/Iterations/Promises/CSS Handling and a couple more.
+
+
 *Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
 ---
